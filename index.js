@@ -1,12 +1,15 @@
-function number () {
-for (i=1; i<=20; i++) {
-if (i%3){
-    console.log("Fizz");
-}
-else if (i%5){
-    console.log("Buzz");
-}
-else if (i%3 || i%5){
-    console.log("FizzBuzz");
-}}}
- number();
+const fizzBuzz= (value) => {
+//   for (i = 1; i <= 20; i++) {
+    if (value%3 === 0 && value % 5 === 0) {
+      return "FizzBuzz";
+    } else if (value % 3 === 0) {
+      return "Fizz";
+    } else if (value%5 === 0) {
+      return "Buzz";
+    } else {
+        return value;
+    }
+  }
+// }
+module.exports = fizzBuzz;
+    
